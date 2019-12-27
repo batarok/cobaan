@@ -19,7 +19,7 @@ add_theme_support( 'post-thumbnails' );
 //widget menu
 function sidebar_cobaan() {
     register_sidebar( array(
-        'name'          => __( 'Sidebar Utama', 'cobaan' ),
+        'name'          => __( 'Sidebar Samping', 'cobaan' ),
         'id'            => 'sidebar-1',
         'description'   => __( 'Sidebar tampil dihalaman.', 'cobaan' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
