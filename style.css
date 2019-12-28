@@ -265,6 +265,24 @@ html,body{
     background: white;
 }
 
+.sidebars .widget.widget_recent_entries ul{
+    list-style: none;
+    padding: 0;
+}
+
+.sidebars .widget.widget_recent_entries ul li{
+    padding-top: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted white;
+}
+
+.sidebars .widget.widget_recent_entries ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
 /* single post */
 .container .content .single{
     padding: 8px 25px;
