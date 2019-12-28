@@ -13,7 +13,7 @@ get_header(); //memanggil konten header.php ?>
                     <div class="loop-post">
                         <div class="clear">
                             <h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            <div class="date"><span>Posting:</span> <?php the_date(); ?> </div>
+                            <div class="date"><span>Posting:</span> <?php echo get_the_date(); ?> </div>
                             <div class="clear"><?php echo the_category(''); ?></div>
                             <?php if (has_post_thumbnail()){
                             echo '<div class="post-thumb">';
@@ -24,6 +24,13 @@ get_header(); //memanggil konten header.php ?>
                         </div>
                     </div>
                 <?php }
+                //pagination post
+                ?>
+                <div class="pagination">
+                    <div class="nav-prev"><?php previous_posts_link ( 'Newer posts' ); ?></div>
+                    <div class="nav-next"><?php next_posts_link( 'Older posts' ); ?></div>
+                </div>
+                <?php
                 }else {
                     echo 'Tidak menemukan posting';
             } ?>
